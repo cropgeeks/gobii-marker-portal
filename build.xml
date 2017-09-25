@@ -40,7 +40,7 @@
 		<war destfile="${war}" update="false" basedir="${web}">
 			<!--<webinf dir="${web}/WEB-INF"/>-->
 			<!--<metainf dir="${web}/META-INF"/>-->
-			<!--<lib dir="${tmp}"/>-->
+			<lib dir="${tmp}"/>
 		</war>
 		<delete dir="${tmp}"/>
 
