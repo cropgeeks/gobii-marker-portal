@@ -10,7 +10,7 @@ import javax.xml.bind.*;
 import jhi.gobii.ui.xml.*;
 
 @Named
-@SessionScoped
+@RequestScoped
 public class ViewXmlLauncherManagedBean implements Serializable
 {
 	private List<XmlLauncher> launchers = new ArrayList<>();
