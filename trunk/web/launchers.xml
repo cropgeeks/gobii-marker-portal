@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<gobii-launchers>
+	<launcher>
+		<name>GOBII Extractor</name>
+		<url>http://cbsugobii10.tc.cornell.edu:8081/gobii-dev/</url>
+		<logo>assets/img/instances/gobii-logo.png</logo>
+		<description>GOBii Genotype Data Management System</description>
+		<color>color-green</color>
+	</launcher>
+	<launcher>
+		<name>Galaxy</name>
+		<url>http://cbsugobii01.tc.cornell.edu:8085/</url>
+		<logo>assets/img/instances/galaxy.png</logo>
+		<description>GOBii Web-based bioinformatics platform</description>
+		<color>color-blue</color>
+	</launcher>
+	<launcher>
+		<name>BMS</name>
+		<url>https://www.integratedbreeding.net/breeding-management-system</url>
+		<logo>assets/img/instances/bms.png</logo>
+		<description>BMS combines interconnected software applications to manage your breeding data across all phases of the crop improvement cycle</description>
+		<color>color-red</color>
+	</launcher>
+	<launcher>
+		<name>G4R</name>
+		<url>http://gobiin4.bti.cornell.edu/breeding4rice/</url>
+		<logo>assets/img/instances/Breeding4Rice.png</logo>
+		<description>Breeding for Results - Germplasm Management System</description>
+		<color>color-orange</color>
+	</launcher>
+	<launcher>
+		<name>KDCompute</name>
+		<url>http://cbsugobii10.tc.cornell.edu:8083/kdcompute/</url>
+		<logo>assets/img/instances/kddart.png</logo>
+		<description>Extensible data analysis and customisable framework</description>
+		<color>color-white</color>
+	</launcher>
+	<launcher>
+		<name>SNP Seek</name>
+		<url>http://snp-seek.irri.org/</url>
+		<logo>assets/img/instances/snpseek.png</logo>
+		<description>SNP Seek provides Genotype, Phenotype, and Variety Information for rice (Oryza sativa L.)</description>
+		<color>color-orange</color>
+	</launcher>
+	<launcher>
+		<name>Germinate (CPC)</name>
+		<url>https://ics.hutton.ac.uk/germinate-cpc/</url>
+		<logo>assets/img/instances/germinate.png</logo>
+		<description>Information on the UK's genebank of landrace and wild potatoes, the Commonwealth Potato Collection.</description>
+		<color>color-purple</color>
+	</launcher>
+	<launcher>
+		<name>Flapjack</name>
+		<url>https://ics.hutton.ac.uk/flapjack</url>
+		<url2>http://bioinf.hutton.ac.uk/flapjack/webstart/flapjack.jnlp</url2>
+		<logo>assets/img/instances/flapjack128.png</logo>
+		<description>Flapjack provides advanced graphical genotype visualization and analysis for allele-based data sets</description>
+		<color>color-dark</color>
+	</launcher>	
+	<launcher>
+		<name>TASSEL</name>
+		<url>http://www.maizegenetics.net/tassel</url>
+		<url2>https://bitbucket.org/tasseladmin/tassel-5-standalone/downloads/?tab=tags</url2>
+		<logo>assets/img/instances/Tassel_Logo128.png</logo>
+		<description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium</description>
+		<color>color-blue</color>
+	</launcher>	
+	<launcher>
+		<name>File Browser</name>
+		<url>http://cbsugobiiangel.tc.cornell.edu:9090/</url>
+		<logo>assets/img/instances/cloudcmd.png</logo>
+		<description>GOBii Web File Browser</description>
+		<color>color-white</color>
+	</launcher>
+	<launcher>
+		<name>Plotly</name>
+		<url>https://plot.ly/create//</url>
+		<logo>assets/img/instances/plotly-logo.png</logo>
+		<description>Plotly lets users easily create interactive charts and dashboards to share online with their audience</description>
+		<color>color-dark</color>
+	</launcher>
+	<launcher>
+		<name>Bowtie Demo</name>
+		<url>https://bowtie-demo.herokuapp.com/</url>
+		<logo>assets/img/instances/bowtie.png</logo>
+		<description>Bowtie is a library for writing dashboards in Python.</description>
+		<color>color-red</color>
+	</launcher>
+</gobii-launchers>
