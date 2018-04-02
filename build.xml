@@ -31,7 +31,7 @@
 		</javac>
 	</target>
 
-	<target name="war">
+	<target name="war" depends="clean,compile">
 		<copy todir="${tmp}" flatten="true">
 			<fileset dir="${lib}">
 				<exclude name="**/lib-devel/**"/>

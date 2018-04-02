@@ -27,7 +27,7 @@ public class ViewXmlLauncherManagedBean implements Serializable
 			JAXBContext jaxbContext = JAXBContext.newInstance(XmlLauncherList.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			//TODO: configure this properly rather than harcoding to a path
-			File xml = new File("/home/tomcat/www/webapps/gobii-ui/launchers.xml");
+			File xml = new File("/usr/local/tomcat/webapps/gobii-ui/launchers.xml");
 
 			XmlLauncherList launcherList = (XmlLauncherList) jaxbUnmarshaller.unmarshal(xml);
 			launchers = launcherList.getList();
