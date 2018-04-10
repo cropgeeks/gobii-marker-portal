@@ -3,14 +3,12 @@ package jhi.gobii.ui.beans;
 import java.io.*;
 import java.util.*;
 import javax.annotation.*;
-import javax.enterprise.context.*;
-import javax.inject.*;
+import javax.enterprise.inject.*;
 import javax.xml.bind.*;
 
 import jhi.gobii.ui.xml.*;
 
-@Named
-@RequestScoped
+@Model
 public class ViewXmlLauncherManagedBean implements Serializable
 {
 	private List<XmlLauncher> launchers = new ArrayList<>();
