@@ -18,10 +18,7 @@
 
 	<!-- Bootstrap core CSS -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet"/>
-
-	<!-- Custom styles for this template -->
 	<link href="assets/css/style.css" rel="stylesheet"/>
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 
 
 	<!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -36,117 +33,70 @@
 	<script src="assets/js/modernizr.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="http://gobiiproject.org/"><img src="assets/img/gobii.png" />
-			</a>
-			<!--<a class="navbar-brand" href="index.html"><img src="assets/img/icon.svg" />
-		</a>-->
-	</div>
-	<div class="navbar-collapse collapse navbar-right">
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#headerwrap">HOME</a>
-			</li>
-			<li><a href="#portfoliowrap">PORTAL</a>
-			</li>
-			<li><a href="#download">DOWNLOAD</a>
-			</li>
-			<li><a href="#developers">DEVELOPERS</a>
-			</li>
-			<li><a href="#funders">FUNDERS</a>
-			</li>
-		</ul>
-	</div>
-	<!--/.nav-collapse -->
-</div>
-</div>
-
-<!-- *****************************************************************************************************************
- HEADERWRAP
- ***************************************************************************************************************** -->
-<div id="headerwrap">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h1>Welcome to GOBII</h1>
-				<h3>The Genomic Open-source Breeding Informatics Initiative</h3>
-			</div>
-			<div class="col-lg-8 col-lg-offset-2 himg">
-				<!--<img src="assets/img/something.png" class="img-responsive">-->
-			</div>
-		</div>
-		<!-- /row -->
-	</div>
-	<!-- /container -->
-</div>
-<!-- /headerwrap -->
-
-
-
-
-
-<!-- *****************************************************************************************************************
- PORTFOLIO SECTION
- ***************************************************************************************************************** -->
-<div id="portfoliowrap">
-	<h3>GOBII Portal</h3>
-
-	<div class="container text-left">
-		<div class="row">
-			<div class="col-xs-12">
-				<p>This portal allows you to access various components within the GOBII system.</p>
-				<p>Colors require some work! This has been put together quickly using JSP/servlets rather than a full framework just to prove the concept.
-					Configuration of the page is based off of a <a href="launchers.xml">simple XML file</a> that defines the links, logos, etc. This could be made web-enabled so no low-level
-					editing is required at all. CSS/design is Bootstrap-based using a <a href="http://blacktie.co/demo/solid/">freely available theme</a>. A fully
-					developed version would likely support internationalization (multi-languages) and customization of all elements, not just the links.</p>
-			</div>
-		</div>
-	</div>
-
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="assets/img/gobii.png" class="d-inline-block align-top" alt=""></img></a>
+		<h1 class="navbar-nav mx-auto"><span class="navbar-text align-middle">Marker Tools Portal</span></h1>
+	</nav>
 	<div class="container-fluid">
-		<div class="row" id="portfolio">
-
-			<ui:repeat value="#{viewXmlLauncherManagedBean.launchers}" var="launcher">
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 no-padding portfolio-item" >
-					<div class="portfolio-item graphic-design">
-						<div class="he-wrap tpl6 #{launcher.color}">
-							<img src="#{launcher.logo}" alt=""/>
-							<div class="instance-view">
-								<div class="bg a0">
-									<h3 class="a1">#{launcher.name}</h3>
-									<a href="#{launcher.url}" class="dmbutton a2"><i class="fa fa-link"></i></a>
-									<ui:fragment rendered="#{launcher.url2 != null}">
-										<a href="#{launcher.url2}" class="dmbutton a2" title="wibble"><i class="fa fa-rocket"></i></a>
-									</ui:fragment>
-									<p>#{launcher.description}</p>
-								</div>
-								<!-- he bg -->
-							</div>
-							<!-- he view -->
-						</div>
-						<!-- he wrap -->
-					</div>
-					<!-- end col-12 -->
+		<div class="row" id="content">
+			<div class="col-3 bg-secondary">
+				<h3 class="text-center">File Browser</h3>
+			</div>
+			<div class="card col-9">
+				<div class="card-header">
+					<ul class="nav nav-tabs card-header-tabs">
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">My Functions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">My Apps</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">App Store<span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
 				</div>
-
-			</ui:repeat>
-
-
+				<div class="card-body">
+					<div id="apps">
+					<div class="card-deck">
+						<ui:repeat value="#{viewXmlLauncherManagedBean.launchers}" var="launcher">
+							<!--<div class="col-sm-4 col-lg-2">-->
+								<div class="card mb-4">
+									<div class="view">
+										<img class="card-img-top img-fluid hoverable" src="#{launcher.logo}" alt=""/>
+										<div class="overlay flex-center bg-dark text-light text-center">
+											<a href="#{launcher.url}" class="linkbutton"><i class="fa fa-link"></i></a>
+											<p class="card-text">#{launcher.description}</p>
+										</div>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">#{launcher.name}</h5>
+										<!--<p class="card-text">#{launcher.description}</p>-->
+									</div>
+								</div>
+							<!--</div>-->
+						</ui:repeat>
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-<!--/Portfoliowrap -->
+	<div id="footer" class="bg-dark text-light">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col text-center">
+					<ul class="list-unstyled">
+						<li><p>GOBII &#169; 2018</p></li>
+						<li><a href="https://twitter.com/GOBII_DB"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -154,7 +104,7 @@
 <!-- *****************************************************************************************************************
  FOOTER
  ***************************************************************************************************************** -->
-<div id="footerwrap">
+<!--<div id="footerwrap">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
@@ -190,10 +140,9 @@
 			</div>
 
 		</div>
-		<!--/row -->
+
 	</div>
-	<!--/container -->
-</div>
+</div>-->
 <!--/footerwrap -->
 
 <!-- Bootstrap core JavaScript

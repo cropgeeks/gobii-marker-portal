@@ -64,26 +64,5 @@
 		<logo>assets/img/instances/Tassel_Logo128.png</logo>
 		<description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium</description>
 		<color>color-blue</color>
-	</launcher>	
-	<launcher>
-		<name>File Browser</name>
-		<url>http://cbsugobiiangel.tc.cornell.edu:9090/</url>
-		<logo>assets/img/instances/cloudcmd.png</logo>
-		<description>GOBii Web File Browser</description>
-		<color>color-white</color>
-	</launcher>
-	<launcher>
-		<name>Plotly</name>
-		<url>https://plot.ly/create//</url>
-		<logo>assets/img/instances/plotly-logo.png</logo>
-		<description>Plotly lets users easily create interactive charts and dashboards to share online with their audience</description>
-		<color>color-dark</color>
-	</launcher>
-	<launcher>
-		<name>Bowtie Demo</name>
-		<url>https://bowtie-demo.herokuapp.com/</url>
-		<logo>assets/img/instances/bowtie.png</logo>
-		<description>Bowtie is a library for writing dashboards in Python.</description>
-		<color>color-red</color>
 	</launcher>
 </gobii-launchers>
