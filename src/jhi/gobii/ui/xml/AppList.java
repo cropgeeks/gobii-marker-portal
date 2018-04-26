@@ -7,16 +7,16 @@ import java.util.*;
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement (name="gobii-launchers")
-public class XmlLauncherList
+public class AppList
 {
-	private ArrayList<XmlLauncher> list;
+	private ArrayList<App> list;
 
-	public ArrayList<XmlLauncher> getList() {
+	public ArrayList<App> getList() {
 		return list;
 	}
 
 	@XmlElement (name="launcher")
-	public void setList(ArrayList<XmlLauncher> list) {
+	public void setList(ArrayList<App> list) {
 		this.list = list;
 	}
 }

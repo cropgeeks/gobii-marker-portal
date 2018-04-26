@@ -42,6 +42,10 @@
 		<servlet-name>GOBII UI</servlet-name>
 		<url-pattern>/faces/*</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GOBII UI</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
 	<context-param>
 		<description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
 		<param-name>javax.faces.STATE_SAVING_METHOD</param-name>
@@ -51,11 +55,28 @@
 		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
 		<param-value>resources.application</param-value>
 	</context-param>
+
+	<!--<context-param>-->
+		<!--<param-name>primefaces.UPLOADER</param-name>-->
+		<!--<param-value>native</param-value>-->
+	<!--</context-param>-->
+	<!--<filter>-->
+		<!--<filter-name>PrimeFaces FileUpload Filter</filter-name>-->
+		<!--<filter-class>org.primefaces.webapp.filter.FileUploadFilter</filter-class>-->
+	<!--</filter>-->
+	<!--<filter-mapping>-->
+		<!--<filter-name>PrimeFaces FileUpload Filter</filter-name>-->
+		<!--<servlet-name>GOBII UI</servlet-name>-->
+	<!--</filter-mapping>-->
+
+
+
 	<listener>
 		<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
 	</listener>
+
 	<welcome-file-list>
-        <welcome-file>faces/index.xhtml</welcome-file>
+        <welcome-file>index.xhtml</welcome-file>
 	</welcome-file-list>
 
 </web-app>
