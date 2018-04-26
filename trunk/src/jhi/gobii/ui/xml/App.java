@@ -5,13 +5,26 @@ package jhi.gobii.ui.xml;
 
 import javax.xml.bind.annotation.*;
 
-public class XmlLauncher
+public class App
 {
 	private String name;
-	private String url, url2;
+	private String url;
 	private String logo;
 	private String description;
-	private String color;
+	private String category;
+
+	public App()
+	{
+	}
+
+	public App(String name, String url, String logo, String description, String category)
+	{
+		this.name = name;
+		this.url = url;
+		this.logo = logo;
+		this.description = description;
+		this.category = category;
+	}
 
 	@Override
 	public String toString() {
@@ -44,15 +57,6 @@ public class XmlLauncher
 		this.url = url;
 	}
 
-	public String getUrl2() {
-		return url2;
-	}
-
-	@XmlElement
-	public void setUrl2(String url2) {
-		this.url2 = url2;
-	}
-
 	public String getDescription() {
 		return description;
 	}
@@ -62,10 +66,10 @@ public class XmlLauncher
 		this.description = description;
 	}
 
-	public String getColor()
-		{ return color; }
+	public String getCategory()
+		{ return category; }
 
 	@XmlElement
-	public void setColor(String color)
-		{ this.color = color; }
+	public void setCategory(String category)
+		{ this.category = category; }
 }

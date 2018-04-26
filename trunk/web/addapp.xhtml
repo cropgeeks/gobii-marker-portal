@@ -8,7 +8,7 @@
 	  xmlns:p="http://primefaces.org/ui"
 	  xmlns:jsf="http://xmlns.jcp.org/jsf">
 
-<head>
+<head jsf:id="head">
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -33,7 +33,7 @@
 	<script src="assets/js/modernizr.js"></script>
 </head>
 
-<body>
+<body jsf:id="body">
 
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="#">
@@ -43,55 +43,68 @@
 	<div class="container-fluid">
 		<div class="row" id="content">
 			<div class="col-3 bg-secondary">
-				<div class="row">
-					<h3 class="text-center">File Browser</h3>
-				</div>
-				<div class="row h-100">
-					<div class="col">
-						<object type="text/html" data="http://cbsugobii11.tc.cornell.edu/elFinder/elfinder.html#elf_l1_Lw" style="width:100%; height:100%;"></object>
-					</div>
-				</div>
+				<h3 class="text-center">Admin links?</h3>
 			</div>
 			<div class="card col-9">
-				<div class="card-header">
-					<ul class="nav nav-tabs card-header-tabs">
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">My Functions</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">My Apps</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#">App Store<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/gobii-ui-hack/addapp.xhtml">Register App</a>
-						</li>
-					</ul>
-				</div>
-				<div class="card-body">
-					<div id="apps">
-					<div class="card-deck">
-						<ui:repeat value="#{viewAppManagedBean.launchers}" var="appLauncher">
-							<!--<div class="col-sm-4 col-lg-2">-->
-								<div class="card mb-4">
-									<div class="view">
-										<img class="card-img-top img-fluid hoverable" src="#{appLauncher.logo}" alt=""/>
-										<div class="overlay flex-center bg-dark text-light text-center">
-											<a href="#{appLauncher.url}" target="_blank" class="linkbutton"><i class="fa fa-link"></i></a>
-											<p class="card-text">#{appLauncher.description}</p>
-										</div>
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">#{appLauncher.name}</h5>
-										<!--<p class="card-text">#{launcher.description}</p>-->
-									</div>
-								</div>
-							<!--</div>-->
-						</ui:repeat>
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">My Functions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">My Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gobii-ui-hack/">App Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Register App</a>
+                        </li>
+                    </ul>
+                </div>
+				<form jsf:id="form" enctype="multipart/form-data" jsf:prependId="false">
+					<fieldset>
+						<legend>Register App</legend>
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="name">Name</label>
+							<div class="col-sm-4">
+								<input type="text" placeholder="App Name" class="form-control" name="name" jsf:id="name" jsf:value="#{registerAppManagedBean.app.name}" required="true"/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="url">URL</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="url" jsf:id="url" jsf:value="#{registerAppManagedBean.app.url}" placeholder="http://www.someurl.com" required="true"/>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="logo">Logo</label>
+							<div class="col-sm-4">
+								<p:fileUpload value="#{registerAppManagedBean.uploadedFile}" mode="simple" class="form-control" required="true" accept="image/*"></p:fileUpload>
+								<!--<input type="file" accept="image/*" class="form-control" name="logo" jsf:id="logo" required="true"/>-->
+							</div>
+                    	</div>
+
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="description">Description</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="description" jsf:id="description" jsf:value="#{registerAppManagedBean.app.description}" placeholder="A tool for handling marker data..." required="true"/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="category">Category</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="category" jsf:id="category" jsf:value="#{registerAppManagedBean.app.category}" placeholder="Some category" required="true"/>
+							</div>
+						</div>
+					</fieldset>
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button type="submit" jsf:id="registerApp" jsf:action="#{registerAppManagedBean.register}" class="btn btn-primary">Register</button>
+						</div>
 					</div>
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
