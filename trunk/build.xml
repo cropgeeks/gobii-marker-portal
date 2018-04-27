@@ -4,6 +4,7 @@
 
 	<property name="web" location="web"/>
 	<property name="src" location="src"/>
+	<property name="res" location="res"/>
 	<property name="lib" location="lib"/>
 	<property name="cls" location="${web}/WEB-INF/classes"/>
 	<property name="war" value="${tomcat.manager.app}.war"/>
@@ -37,10 +38,11 @@
 				<exclude name="**/lib-devel/**"/>
 			</fileset>
 		</copy>
-		<war destfile="${war}" update="false" basedir="${web}">
+		<war destfile="${war}" update="true" basedir="${web}">
 			<!--<webinf dir="${web}/WEB-INF"/>-->
 			<!--<metainf dir="${web}/META-INF"/>-->
 			<lib dir="${tmp}"/>
+			<zipfileset dir="${res}" prefix="WEB-INF/classes/resources"/>
 		</war>
 		<delete dir="${tmp}"/>
 
