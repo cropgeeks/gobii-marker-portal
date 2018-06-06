@@ -1,40 +1,7 @@
-<!DOCTYPE html [<!ENTITY nbsp "&#160;">]>
-
-<html lang="en"
-	  xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:ui="http://java.sun.com/jsf/facelets"
-	  xmlns:h="http://java.sun.com/jsf/html"
-	  xmlns:f="http://java.sun.com/jsf/core"
-	  xmlns:p="http://primefaces.org/ui"
-	  xmlns:jsf="http://xmlns.jcp.org/jsf">
-
-<head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="description" content=""/>
-
-	<title><h:outputText value="#{rb['index.title']}"/></title>
-
-	<!-- Bootstrap core CSS -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet"/>
-	<link href="assets/css/style.css" rel="stylesheet"/>
-
-
-	<!-- Just for debugging purposes. Don't actually copy this line! -->
-	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-	<script src="assets/js/modernizr.js"></script>
-</head>
-
-<body>
-<ui:composition template="layout.xhtml">
+<ui:composition template="layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
 	<ui:define name="sidebar">
 		<div class="row">
 			<h3 class="text-center"><h:outputText value="#{rb['sidebar.filebrowser']}"/></h3>
@@ -50,13 +17,13 @@
 		<div class="card-header">
 			<ul class="nav nav-tabs card-header-tabs">
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#"><h:outputText value="#{rb['nav.functions']}"/></a>
+					<a class="nav-link disabled"><h:outputText value="#{rb['nav.functions']}"/></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#"><h:outputText value="#{rb['nav.apps']}"/></a>
+					<a class="nav-link disabled"><h:outputText value="#{rb['nav.apps']}"/></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="#"><h:outputText value="#{rb['nav.store']}"/><span class="sr-only">(current)</span></a>
+					<a class="nav-link active"><h:outputText value="#{rb['nav.store']}"/><span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/gobii-ui-hack/addapp.xhtml"><h:outputText value="#{rb['nav.registerApp']}"/></a>
@@ -88,5 +55,3 @@
 		</div>
 	</ui:define>
 </ui:composition>
-</body>
-</html>
