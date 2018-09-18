@@ -14,8 +14,12 @@
 		<pathelement path="${cls}"/>
 		<fileset dir="${lib}"/>
 	</path>
+	
+	<target name="init">
+		<mkdir dir="${cls}"/>
+	</target>
 
-	<target name="clean">
+	<target name="clean" depends="init">
 		<delete includeemptydirs="true">
 			<fileset dir="${cls}" includes="**/*"/>
 			<fileset file="${jar}"/>
@@ -45,7 +49,9 @@
 			<zipfileset dir="${res}" prefix="WEB-INF/classes/resources"/>
 		</war>
 		<delete dir="${tmp}"/>
-
+	</target>
+	
+	<target name="deploy" depends="war">
 		<taskdef name="undeploy" classpathref="project.classpath"
 			classname="org.apache.catalina.ant.UndeployTask"/>
 		<taskdef name="deploy" classpathref="project.classpath"
