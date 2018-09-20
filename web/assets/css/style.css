@@ -70,3 +70,16 @@ body {
     transition: background-color 300ms ease-out;
     font-weight: normal !important;
 }
+
+#sidebar {
+    background: #d5dada;
+}
+
+#heading {
+    font-family: "Times New Roman", 'DejaVu Serif', Georgia, Times, serif;
+    color: #599132;
+}
+
+h1 #heading {
+    color: #599132;
+}
