@@ -53,14 +53,14 @@ public class RegisterAppManagedBean implements Serializable
 			e.printStackTrace();
 		}
 
-		app.setLogo("assets/img/instances/" + uploadedFile.getFileName());
+		app.setLogo(uploadedFile.getFileName());
 
 		try
 		{
 			JAXBContext jaxbContext = JAXBContext.newInstance(AppList.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			//TODO: configure this properly rather than harcoding to a path
-			File xml = new File("/usr/local/tomcat/webapps/gobii-ui-hack/launchers.xml");
+			File xml = new File(FacesContext.getCurrentInstance().getExternalContext().getRealPath("/config/launchers.xml"));
 
 			AppList launcherList = (AppList) jaxbUnmarshaller.unmarshal(xml);
 			launcherList.getList().add(app);

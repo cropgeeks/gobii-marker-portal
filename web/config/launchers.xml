@@ -3,7 +3,7 @@
 	<launcher>
 		<name>GOBII Extractor</name>
 		<url>http://cbsugobii10.tc.cornell.edu:8081/gobii-dev/</url>
-		<logo>assets/img/instances/gobii-logo.png</logo>
+		<logo>gobii-logo.png</logo>
 		<description>GOBii Genotype Data Management System</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
@@ -11,7 +11,7 @@
 	<launcher>
 		<name>Galaxy</name>
 		<url>http://cbsugobii01.tc.cornell.edu:8085/</url>
-		<logo>assets/img/instances/galaxy.png</logo>
+		<logo>galaxy.png</logo>
 		<description>GOBii Web-based bioinformatics platform</description>
 		<color>color-blue</color>
 		<category>Analysis</category>
@@ -19,7 +19,7 @@
 	<launcher>
 		<name>BMS</name>
 		<url>https://www.integratedbreeding.net/breeding-management-system</url>
-		<logo>assets/img/instances/bms.png</logo>
+		<logo>bms.png</logo>
 		<description>BMS combines interconnected software applications to manage your breeding data across all phases of the crop improvement cycle</description>
 		<color>color-red</color>
 		<category>Breeding Management</category>
@@ -27,7 +27,7 @@
 	<launcher>
 		<name>G4R</name>
 		<url>http://gobiin4.bti.cornell.edu/breeding4rice/</url>
-		<logo>assets/img/instances/Breeding4Rice.png</logo>
+		<logo>Breeding4Rice.png</logo>
 		<description>Breeding for Results - Germplasm Management System</description>
 		<color>color-orange</color>
 		<category>Breeding Management</category>
@@ -35,7 +35,7 @@
 	<launcher>
 		<name>KDCompute</name>
 		<url>http://cbsugobii10.tc.cornell.edu:8083/kdcompute/</url>
-		<logo>assets/img/instances/kddart.png</logo>
+		<logo>kddart.png</logo>
 		<description>Extensible data analysis and customisable framework</description>
 		<color>color-white</color>
 		<category>Analysis</category>
@@ -43,7 +43,7 @@
 	<launcher>
 		<name>SNP Seek</name>
 		<url>http://snp-seek.irri.org/</url>
-		<logo>assets/img/instances/snpseek.png</logo>
+		<logo>snpseek.png</logo>
 		<description>SNP Seek provides Genotype, Phenotype, and Variety Information for rice (Oryza sativa L.)</description>
 		<color>color-orange</color>
 		<category>Genotype Management</category>
@@ -51,7 +51,7 @@
 	<launcher>
 		<name>Germinate (CPC)</name>
 		<url>https://ics.hutton.ac.uk/germinate-cpc/</url>
-		<logo>assets/img/instances/germinate.png</logo>
+		<logo>germinate.png</logo>
 		<description>Information on the UK's genebank of landrace and wild potatoes, the Commonwealth Potato Collection.</description>
 		<color>color-purple</color>
 		<category>Genotype Managemnet</category>
@@ -59,7 +59,7 @@
 	<launcher>
 		<name>Flapjack</name>
 		<url>https://ics.hutton.ac.uk/flapjack</url>
-		<logo>assets/img/instances/flapjack128.png</logo>
+		<logo>flapjack128.png</logo>
 		<description>Flapjack provides advanced graphical genotype visualization and analysis for allele-based data sets</description>
 		<color>color-dark</color>
 		<category>Desktop Apps</category>
@@ -67,7 +67,7 @@
 	<launcher>
 		<name>TASSEL</name>
 		<url>http://www.maizegenetics.net/tassel</url>
-		<logo>assets/img/instances/Tassel_Logo128.png</logo>
+		<logo>Tassel_Logo128.png</logo>
 		<description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium</description>
 		<color>color-blue</color>
 		<category>Desktop Apps</category>

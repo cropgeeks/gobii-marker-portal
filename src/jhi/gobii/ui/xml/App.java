@@ -3,6 +3,7 @@
 
 package jhi.gobii.ui.xml;
 
+import javax.faces.context.*;
 import javax.xml.bind.annotation.*;
 
 public class App
@@ -36,7 +37,7 @@ public class App
 	}
 
 	public String getLogo() {
-		return logo;
+		return FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath() + "/config/img/" + logo;
 	}
 
 	@XmlElement
