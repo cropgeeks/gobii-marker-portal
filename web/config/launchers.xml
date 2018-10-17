@@ -1,22 +1,46 @@
 <?xml version="1.0"?>
 <gobii-launchers>
 	<launcher>
-		<name>GOBII Extractor</name>
-		<url>http://cbsugobii10.tc.cornell.edu:8081/gobii-dev/</url>
-		<logo>gobii-logo.png</logo>
-		<description>GOBii Genotype Data Management System</description>
+		<name>Zoan GDM Extractor</name>
+		<url>http://cbsugobii01.tc.cornell.edu:8081/gobii-zoan/</url>
+		<logo>gdm-11-b[2].png</logo>
+		<description>Zoan GDM Extractor</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
 	</launcher>
 	<launcher>
-		<name>Galaxy</name>
-		<url>http://cbsugobii01.tc.cornell.edu:8085/</url>
+		<name>Parameci GDM Extractor</name>
+		<url>http://cbsugobii01.tc.cornell.edu:8081/gobii-paramecia/</url>
+		<logo>gdm-11-b[2].png</logo>
+		<description>Parameci GDM Extractor</description>
+		<color>color-green</color>
+		<category>Genotype Maangement</category>
+	</launcher>
+	<launcher>
+		<name>Dev GDM Extractor</name>
+		<url>http://cbsugobii10.tc.cornell.edu:8081/gobii-dev/</url>
+		<logo>gdm-11-b[2].png</logo>
+		<description>Dev GDM Extractor</description>
+		<color>color-green</color>
+		<category>Genotype Maangement</category>
+	</launcher>
+	<launcher>
+		<name>TimeScope</name>
+		<url>http://cbsugobii10.tc.cornell.edu:8081/datatimescope/</url>
+		<logo>DataTimescope[1].png</logo>
+		<description>TimeScope</description>
+		<color>color-green</color>
+		<category>Genotype Maangement</category>
+	</launcher>
+	<launcher>
+		<name>EiB Galaxy Demo</name>
+		<url>http://galaxy-demo.excellenceinbreeding.org/</url>
 		<logo>galaxy.png</logo>
-		<description>GOBii Web-based bioinformatics platform</description>
+		<description>EiB Galaxy Demo (Web-based bioinformatics platform)</description>
 		<color>color-blue</color>
 		<category>Analysis</category>
 	</launcher>
-	<launcher>
+	<!--<launcher>
 		<name>BMS</name>
 		<url>https://www.integratedbreeding.net/breeding-management-system</url>
 		<logo>bms.png</logo>
@@ -32,14 +56,7 @@
 		<color>color-orange</color>
 		<category>Breeding Management</category>
 	</launcher>
-	<launcher>
-		<name>KDCompute</name>
-		<url>http://cbsugobii10.tc.cornell.edu:8083/kdcompute/</url>
-		<logo>kddart.png</logo>
-		<description>Extensible data analysis and customisable framework</description>
-		<color>color-white</color>
-		<category>Analysis</category>
-	</launcher>
+	
 	<launcher>
 		<name>SNP Seek</name>
 		<url>http://snp-seek.irri.org/</url>
@@ -55,7 +72,8 @@
 		<description>Information on the UK's genebank of landrace and wild potatoes, the Commonwealth Potato Collection.</description>
 		<color>color-purple</color>
 		<category>Genotype Managemnet</category>
-	</launcher>
+	</launcher>-->
+	
 	<launcher>
 		<name>Flapjack</name>
 		<url>https://ics.hutton.ac.uk/flapjack</url>
@@ -69,6 +87,39 @@
 		<url>http://www.maizegenetics.net/tassel</url>
 		<logo>Tassel_Logo128.png</logo>
 		<description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium</description>
+		<color>color-blue</color>
+		<category>Desktop Apps</category>
+	</launcher>
+	<launcher>
+		<name>KDXplore</name>
+		<url>http://www.kddart.org/kdxplore.html</url>
+		<logo>KDXplore_with_text.png</logo>
+		<description>Extensible data analysis and customisable framework</description>
+		<color>color-white</color>
+		<category>Analysis</category>
+	</launcher>
+	
+	<launcher>
+		<name>EiB (Info)</name>
+		<url>http://www.excellenceinbreeding.org/</url>
+		<logo>eib.png</logo>
+		<description>The Excellence in Breeding platform intends to modernize breeding programs targeting the developing world</description>
+		<color>color-blue</color>
+		<category>Desktop Apps</category>
+	</launcher>
+	<launcher>
+		<name>GOBii Project (Info)</name>
+		<url>http://gobiiproject.org/</url>
+		<logo>gobii-logo.png</logo>
+		<description>GOBii Project</description>
+		<color>color-blue</color>
+		<category>Desktop Apps</category>
+	</launcher>
+	<launcher>
+		<name>GDM Documentation (Info)</name>
+		<url>http://cbsugobii05.tc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
+		<logo>gobii-logo.png</logo>
+		<description>GDM Documentation</description>
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
 	</launcher>
