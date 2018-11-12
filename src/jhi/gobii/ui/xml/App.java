@@ -13,6 +13,7 @@ public class App
 	private String logo;
 	private String description;
 	private String category;
+	private String type;
 
 	public App()
 	{
@@ -73,4 +74,11 @@ public class App
 	@XmlElement
 	public void setCategory(String category)
 		{ this.category = category; }
+
+	public String getType()
+		{ return type; }
+
+	@XmlElement
+	public void setType(String type)
+		{ this.type = type; }
 }

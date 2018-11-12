@@ -7,6 +7,7 @@
 		<description>Zoan GDM Extractor</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
+		<type>Web Apps</type>
 	</launcher>
 	<launcher>
 		<name>Parameci GDM Extractor</name>
@@ -15,14 +16,7 @@
 		<description>Parameci GDM Extractor</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
-	</launcher>
-	<launcher>
-		<name>Dev GDM Extractor</name>
-		<url>http://cbsugobii10.tc.cornell.edu:8081/gobii-dev/</url>
-		<logo>gdm-11-b[2].png</logo>
-		<description>Dev GDM Extractor</description>
-		<color>color-green</color>
-		<category>Genotype Maangement</category>
+		<type>Web Apps</type>
 	</launcher>
 	<launcher>
 		<name>TimeScope</name>
@@ -31,6 +25,7 @@
 		<description>TimeScope</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
+		<type>Web Apps</type>
 	</launcher>
 	<launcher>
 		<name>EiB Galaxy Demo</name>
@@ -39,40 +34,8 @@
 		<description>EiB Galaxy Demo (Web-based bioinformatics platform)</description>
 		<color>color-blue</color>
 		<category>Analysis</category>
+		<type>Web Apps</type>
 	</launcher>
-	<!--<launcher>
-		<name>BMS</name>
-		<url>https://www.integratedbreeding.net/breeding-management-system</url>
-		<logo>bms.png</logo>
-		<description>BMS combines interconnected software applications to manage your breeding data across all phases of the crop improvement cycle</description>
-		<color>color-red</color>
-		<category>Breeding Management</category>
-	</launcher>
-	<launcher>
-		<name>G4R</name>
-		<url>http://gobiin4.bti.cornell.edu/breeding4rice/</url>
-		<logo>Breeding4Rice.png</logo>
-		<description>Breeding for Results - Germplasm Management System</description>
-		<color>color-orange</color>
-		<category>Breeding Management</category>
-	</launcher>
-	
-	<launcher>
-		<name>SNP Seek</name>
-		<url>http://snp-seek.irri.org/</url>
-		<logo>snpseek.png</logo>
-		<description>SNP Seek provides Genotype, Phenotype, and Variety Information for rice (Oryza sativa L.)</description>
-		<color>color-orange</color>
-		<category>Genotype Management</category>
-	</launcher>
-	<launcher>
-		<name>Germinate (CPC)</name>
-		<url>https://ics.hutton.ac.uk/germinate-cpc/</url>
-		<logo>germinate.png</logo>
-		<description>Information on the UK's genebank of landrace and wild potatoes, the Commonwealth Potato Collection.</description>
-		<color>color-purple</color>
-		<category>Genotype Managemnet</category>
-	</launcher>-->
 	
 	<launcher>
 		<name>Flapjack</name>
@@ -81,6 +44,7 @@
 		<description>Flapjack provides advanced graphical genotype visualization and analysis for allele-based data sets</description>
 		<color>color-dark</color>
 		<category>Desktop Apps</category>
+		<type>Desktop Apps</type>
 	</launcher>	
 	<launcher>
 		<name>TASSEL</name>
@@ -89,6 +53,7 @@
 		<description>TASSEL is a software package to evaluate traits associations, evolutionary patterns, and linkage disequilibrium</description>
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
+		<type>Desktop Apps</type>
 	</launcher>
 	<launcher>
 		<name>KDXplore</name>
@@ -97,30 +62,25 @@
 		<description>Extensible data analysis and customisable framework</description>
 		<color>color-white</color>
 		<category>Analysis</category>
+		<type>Desktop Apps</type>
 	</launcher>
-	
+
 	<launcher>
-		<name>EiB (Info)</name>
-		<url>http://www.excellenceinbreeding.org/</url>
-		<logo>eib.png</logo>
-		<description>The Excellence in Breeding platform intends to modernize breeding programs targeting the developing world</description>
-		<color>color-blue</color>
-		<category>Desktop Apps</category>
-	</launcher>
-	<launcher>
-		<name>GOBii Project (Info)</name>
+		<name>GOBii Project</name>
 		<url>http://gobiiproject.org/</url>
 		<logo>gobii-logo.png</logo>
 		<description>GOBii Project</description>
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
+		<type>Links</type>
 	</launcher>
 	<launcher>
-		<name>GDM Documentation (Info)</name>
-		<url>http://cbsugobii05.tc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
-		<logo>gobii-logo.png</logo>
-		<description>GDM Documentation</description>
+		<name>EiB Platform</name>
+		<url>http://www.excellenceinbreeding.org/</url>
+		<logo>eib.png</logo>
+		<description>The Excellence in Breeding platform intends to modernize breeding programs targeting the developing world</description>
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
+		<type>Links</type>
 	</launcher>
 </gobii-launchers>

@@ -9,29 +9,29 @@
 
 	<display-name>GOBII UI</display-name>
 	
-	<servlet>
-		<servlet-name>webdav</servlet-name>
-		<servlet-class>org.apache.catalina.servlets.WebdavServlet</servlet-class>
-		<init-param>
-			<param-name>debug</param-name>
-			<param-value>0</param-value>
-		</init-param>
-		<init-param>
-			<param-name>listings</param-name>
-			<param-value>true</param-value>
-		</init-param>
-		<!-- Read-Write Access Settings -->
-		<init-param>
-			<param-name>readonly</param-name>
-			<param-value>false</param-value>
-		</init-param>
-	</servlet>
+	<!--<servlet>-->
+		<!--<servlet-name>webdav</servlet-name>-->
+		<!--<servlet-class>org.apache.catalina.servlets.WebdavServlet</servlet-class>-->
+		<!--<init-param>-->
+			<!--<param-name>debug</param-name>-->
+			<!--<param-value>0</param-value>-->
+		<!--</init-param>-->
+		<!--<init-param>-->
+			<!--<param-name>listings</param-name>-->
+			<!--<param-value>true</param-value>-->
+		<!--</init-param>-->
+		<!--&lt;!&ndash; Read-Write Access Settings &ndash;&gt;-->
+		<!--<init-param>-->
+			<!--<param-name>readonly</param-name>-->
+			<!--<param-value>false</param-value>-->
+		<!--</init-param>-->
+	<!--</servlet>-->
 
 	<!-- URL Mapping -->
-	<servlet-mapping>
-		<servlet-name>webdav</servlet-name>
-		<url-pattern>/edit/*</url-pattern>
-	</servlet-mapping>
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>webdav</servlet-name>-->
+		<!--<url-pattern>/edit/*</url-pattern>-->
+	<!--</servlet-mapping>-->
 
 	<servlet>
 		<servlet-name>GOBII UI</servlet-name>
@@ -76,7 +76,7 @@
 	</listener>
 
 	<welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>webapps.xhtml</welcome-file>
 	</welcome-file-list>
 
 </web-app>
