@@ -21,6 +21,10 @@ body {
     background: #679868;
 }
 
+.min-100 {
+    min-height: 100vh;
+}
+
 #apps .card-deck {
     display: grid;
 }
