@@ -1,7 +1,6 @@
-<!DOCTYPE html [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE html>
 
 <html lang="en"
-      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
@@ -27,34 +26,25 @@
 
 <body>
 
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="assets/img/gobii.png" class="d-inline-block align-top" alt=""></img></a>
-    <h1 class="navbar-nav mx-auto" id="heading"><span class="align-middle"><h:outputText value="#{rb['index.title']}"/></span></h1>
-</nav>
-<div class="container-fluid">
-    <div class="row" id="content">
+<div class="container-fluid h-100">
+    <nav class="navbar" id="header">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/gobii.png" class="d-inline-block align-top" alt=""></img></a>
+        <h1 class="navbar-nav mx-auto" id="heading"><span class="align-middle"><h:outputText value="#{rb['index.title']}"/></span></h1>
+    </nav>
+    <div class="row flex-fill" id="content">
         <div class="col-3" id="sidebar">
             <ui:insert name="sidebar">
             </ui:insert>
         </div>
-        <div class="card col-9">
+        <div class="card col-9 px-0">
             <ui:insert name="main-content">
             </ui:insert>
         </div>
     </div>
 </div>
-<div id="footer" class="bg-dark text-light">
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col text-center">
-                <ul class="list-unstyled">
-                    <li><p>GOBII &#169; 2018</p></li>
-                    <li><a href="https://twitter.com/GOBII_DB"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<div class="footer">
+    <p class="text-center p-0 m-0">GOBII &#169; 2018</p>
 </div>
 
 </body>
