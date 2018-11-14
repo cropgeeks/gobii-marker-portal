@@ -3,7 +3,7 @@
 	<launcher>
 		<name>Zoan GDM Extractor</name>
 		<url>http://cbsugobii01.tc.cornell.edu:8081/gobii-zoan/</url>
-		<logo>gdm-11-b[2].png</logo>
+		<logo>gdm-11-b.png</logo>
 		<description>Zoan GDM Extractor</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
@@ -12,7 +12,7 @@
 	<launcher>
 		<name>Parameci GDM Extractor</name>
 		<url>http://cbsugobii01.tc.cornell.edu:8081/gobii-paramecia/</url>
-		<logo>gdm-11-b[2].png</logo>
+		<logo>gdm-11-b.png</logo>
 		<description>Parameci GDM Extractor</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
@@ -21,7 +21,7 @@
 	<launcher>
 		<name>TimeScope</name>
 		<url>http://cbsugobii10.tc.cornell.edu:8081/datatimescope/</url>
-		<logo>DataTimescope[1].png</logo>
+		<logo>DataTimescope.png</logo>
 		<description>TimeScope</description>
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
