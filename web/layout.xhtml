@@ -26,25 +26,26 @@
 
 <body>
 
-<div class="container-fluid min-100 flex-column d-flex">
-    <nav class="navbar" id="header">
+<div class="container-fluid h-100 flex-column d-flex px-0 mx-0">
+    <nav class="navbar px-0 mx-0" id="header">
         <a class="navbar-brand" href="#">
             <img src="assets/img/gobii.png" class="d-inline-block align-top" alt=""></img></a>
         <h1 class="navbar-nav mx-auto" id="heading"><span class="align-middle"><h:outputText value="#{rb['index.title']}"/></span></h1>
     </nav>
-    <div class="row flex-fill" id="content">
+    <div class="row flex-grow-1 px-0 mx-0" id="content">
         <div class="col-2" id="sidebar">
             <ui:insert name="sidebar">
             </ui:insert>
         </div>
-        <div class="card col-10 px-0">
+        <div class="card col-10 px-0 mx-0">
             <ui:insert name="main-content">
             </ui:insert>
         </div>
     </div>
-</div>
-<div class="footer">
-    <p class="text-center p-0 m-0">GOBII &#169; 2018</p>
+    <div class="footer">
+        <p class="text-center p-0 m-0">GOBII &#169; 2018</p>
+    </div>
+
 </div>
 
 </body>
