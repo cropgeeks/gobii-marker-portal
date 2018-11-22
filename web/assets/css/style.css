@@ -9,10 +9,12 @@ body {
     height: 100vh;
 }
 
+#wrapper {
+    min-height: 100vh;
+}
+
 #header {
     background: #679868;
-    /*margin-left: -15px;*/
-    /*margin-right: -15px;*/
 }
 
 #footer {
