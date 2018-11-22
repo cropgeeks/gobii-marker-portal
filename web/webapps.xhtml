@@ -23,9 +23,9 @@
 			<div id="apps">
 				<div class="card-deck">
 					<ui:repeat value="#{webAppsManagedBean.launchers}" var="appLauncher">
-						<div class="card mb-4">
+						<div class="card mb-4 h-100">
 							<div class="view">
-								<img class="card-img-top img-fluid hoverable" src="#{appLauncher.logo}" alt=""/>
+								<img class="card-img-top hoverable" src="#{appLauncher.logo}" alt=""/>
 								<div class="overlay flex-center bg-dark text-light text-center">
 									<a href="#{appLauncher.url}" target="_blank" class="linkbutton"><i class="fa fa-link"></i></a>
 									<p class="card-text">#{appLauncher.description}</p>

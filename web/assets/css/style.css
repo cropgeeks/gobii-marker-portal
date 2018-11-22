@@ -2,24 +2,31 @@
 
 
 html {
-    position: relative;
-    min-height: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 body {
-    min-height: 100%;
-    height: 100%;
-    /*margin-bottom: 60px;*/
+    height: 100vh;
 }
 
-.footer {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-    /*height: 60px; !* Set the fixed height of the footer here *!*/
+#header {
+    background: #679868;
+    /*margin-left: -15px;*/
+    /*margin-right: -15px;*/
+}
+
+#footer {
     line-height: 60px;
     background: #679868;
+}
+
+.view {
+    flex-shrink: 0;
+}
+
+.view img {
+    height: auto;
+    width: 100%;
 }
 
 #apps .card-deck {
@@ -111,12 +118,6 @@ body {
 
 #sidebar {
     background: #999999;
-}
-
-#header {
-    background: #679868;
-    /*margin-left: -15px;*/
-    /*margin-right: -15px;*/
 }
 
 #heading {

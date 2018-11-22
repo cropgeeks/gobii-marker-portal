@@ -33,20 +33,18 @@
         <h1 class="navbar-nav mx-auto" id="heading"><span class="align-middle"><h:outputText value="#{rb['index.title']}"/></span></h1>
     </nav>
 
-    <!--<div class="h-100 ">-->
-        <div class="row px-0 mx-0 flex-grow-1" id="content">
-            <div class="col-2" id="sidebar">
-                <ui:insert name="sidebar">
-                </ui:insert>
-            </div>
-            <div class="card col-10 px-0 mx-0">
-                <ui:insert name="main-content">
-                </ui:insert>
-            </div>
+    <div class="row px-0 mx-0 flex-grow-1" id="content">
+        <div class="col-2" id="sidebar">
+            <ui:insert name="sidebar">
+            </ui:insert>
         </div>
-    <!--</div>-->
+        <div class="card col-10 px-0 mx-0">
+            <ui:insert name="main-content">
+            </ui:insert>
+        </div>
+    </div>
 
-    <div class="footer container-fluid flex-shrink-0">
+    <div class="flex-shrink-0" id="footer">
         <p class="text-center p-0 m-0">GOBII &#169; 2018</p>
     </div>
 </div>
