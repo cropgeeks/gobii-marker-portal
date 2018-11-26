@@ -28,13 +28,12 @@
 			</ul>
 		</div>
 		<div class="card-body">
-			<div id="apps">
-				<div class="card-deck">
+			<div class="card-deck" id="apps">
+				<ul>
 					<ui:repeat value="#{desktopAppsManagedBean.launchers}" var="appLauncher">
-						<!--<div class="col-sm-4 col-lg-2">-->
-						<div class="card mb-4">
+						<li class="card">
 							<div class="view">
-								<img class="card-img-top img-fluid hoverable" src="#{appLauncher.logo}" alt=""/>
+								<img class="card-img-top hoverable" src="#{appLauncher.logo}" alt=""/>
 								<div class="overlay flex-center bg-dark text-light text-center">
 									<a href="#{appLauncher.url}" target="_blank" class="linkbutton"><i class="fa fa-link"></i></a>
 									<p class="card-text">#{appLauncher.description}</p>
@@ -42,12 +41,10 @@
 							</div>
 							<div class="card-body">
 								<h6 class="card-title">#{appLauncher.name}</h6>
-								<!--<p class="card-text">#{launcher.description}</p>-->
 							</div>
-						</div>
-						<!--</div>-->
+						</li>
 					</ui:repeat>
-				</div>
+				</ul>
 			</div>
 		</div>
 	</ui:define>

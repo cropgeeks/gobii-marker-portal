@@ -19,11 +19,11 @@
 				</li>
 			</ul>
 		</div>
-		<div class="card-body">
-			<div id="apps">
-				<div class="card-deck">
+		<div class="card-body mx-3">
+			<div class="card-deck" id="apps">
+				<ul>
 					<ui:repeat value="#{webAppsManagedBean.launchers}" var="appLauncher">
-						<div class="card h-100">
+						<li class="card">
 							<div class="view">
 								<img class="card-img-top hoverable" src="#{appLauncher.logo}" alt=""/>
 								<div class="overlay flex-center bg-dark text-light text-center">
@@ -34,9 +34,9 @@
 							<div class="card-body">
 								<h6 class="card-title">#{appLauncher.name}</h6>
 							</div>
-						</div>
+						</li>
 					</ui:repeat>
-				</div>
+				</ul>
 			</div>
 		</div>
 	</ui:define>
