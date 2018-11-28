@@ -6,7 +6,7 @@
 		<nav class="nav flex-column mt-3">
 			<h3>Documentation</h3>
 			<ui:repeat value="#{linksManagedBean.documentation}" var="documentation">
-				<a href="#{documentation.url}">#{documentation.displayName}</a>
+				<a href="#{documentation.url}" target="_blank">#{documentation.displayName}</a>
 			</ui:repeat>
 		</nav>
 	</ui:define>
@@ -25,7 +25,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="card-body">
+		<div class="card-body mx-3">
 			<div class="card-deck" id="apps">
 				<ul>
 					<ui:repeat value="#{linksManagedBean.launchers}" var="appLauncher">

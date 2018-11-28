@@ -143,13 +143,13 @@ supported by the browser.
 .linkbutton:hover,
 .linkbutton:active,
 .linkbutton:focus {
-    color: #ffffff;
-    background-color: #222222;
-    border-color: #ffffff;
+    color: #EDEDE6;
+    background-color: #7D9992;
+    border-color: #EDEDE6;
 }
 
 .linkbutton {
-    background: rgba(0, 0, 0, 0);
+    background: #242D27;
     border: 1px solid #ffffff;
     color: #ffffff;
     -webkit-border-radius: 2px;
@@ -160,6 +160,11 @@ supported by the browser.
     display: inline-block;
     transition: background-color 300ms ease-out;
     font-weight: normal !important;
+}
+
+#overlay {
+    background: #242D27;
+    color: #EDEDE6;
 }
 
 #sidebar {
@@ -177,7 +182,7 @@ supported by the browser.
 }
 
 #heading {
-    font-family: "Libre Bakersville", serif;/*, "Times New Roman", 'DejaVu Serif', Georgia, Times, serif;*/
+    font-family: Libre Bakersville, serif;/*, "Times New Roman", 'DejaVu Serif', Georgia, Times, serif;*/
     color: #EDEDE6;
     text-shadow: 2px 2px #242D27;
 }
@@ -187,9 +192,9 @@ h1 #heading {
 }
 
 .nav-link {
-    color: #242D27;
+    color: #7D9992;
 }
 
 .nav-link:hover {
-    color: #807B5D;
+    color: #242D27;
 }
