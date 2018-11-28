@@ -22,6 +22,10 @@ body {
     background: #679868;
 }
 
+#app-title {
+    color: #242D27;
+}
+
 /* The approach used for the CSS Grid Layout is the one described at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement#The_Internet_Explorer_and_Edge_situation
 and utilises the approach of progressively enhancing the website for newer browsers is the unprefixed display: grid is
 supported by the browser.
@@ -173,10 +177,18 @@ supported by the browser.
 }
 
 #heading {
-    font-family: "Times New Roman", 'DejaVu Serif', Georgia, Times, serif;
-    color: #111111;
+    font-family: "Libre Bakersville", serif;/*, "Times New Roman", 'DejaVu Serif', Georgia, Times, serif;*/
+    color: #EDEDE6;
 }
 
 h1 #heading {
     color: #599132;
+}
+
+.nav-link {
+    color: #242D27;
+}
+
+.nav-link:hover {
+    color: #807B5D;
 }
