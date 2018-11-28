@@ -179,6 +179,7 @@ supported by the browser.
 #heading {
     font-family: "Libre Bakersville", serif;/*, "Times New Roman", 'DejaVu Serif', Georgia, Times, serif;*/
     color: #EDEDE6;
+    text-shadow: 2px 2px #242D27;
 }
 
 h1 #heading {
