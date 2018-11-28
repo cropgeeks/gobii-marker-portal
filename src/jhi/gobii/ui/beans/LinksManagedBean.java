@@ -14,6 +14,7 @@ import java.util.stream.*;
 public class LinksManagedBean implements Serializable
 {
 	private List<App> launchers = new ArrayList<>();
+	private List<Documentation> documentation = new ArrayList<>();
 
 	public LinksManagedBean()
 	{
@@ -30,6 +31,11 @@ public class LinksManagedBean implements Serializable
 			File xml = new File(FacesContext.getCurrentInstance().getExternalContext().getRealPath("/config/launchers.xml"));
 
 			AppList launcherList = (AppList) jaxbUnmarshaller.unmarshal(xml);
+
+			documentation = launcherList.getList().stream()
+				.flatMap(l -> l.getDocumentationList().stream())
+				.collect(Collectors.toCollection(ArrayList::new));
+
 			launchers = launcherList.getList().stream()
 				.filter(l -> l.getType().equalsIgnoreCase("Links"))
 				.collect(Collectors.toCollection(ArrayList::new));
@@ -44,4 +50,10 @@ public class LinksManagedBean implements Serializable
 
 	public void setLaunchers(List<App> launchers)
 		{  this.launchers = launchers; }
+
+	public List<Documentation> getDocumentation()
+		{ return documentation; }
+
+	public void setDocumentation(List<Documentation> documentation)
+		{ this.documentation = documentation; }
 }

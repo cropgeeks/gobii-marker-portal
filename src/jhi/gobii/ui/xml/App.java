@@ -3,6 +3,7 @@
 
 package jhi.gobii.ui.xml;
 
+import java.util.*;
 import javax.faces.context.*;
 import javax.xml.bind.annotation.*;
 
@@ -14,18 +15,20 @@ public class App
 	private String description;
 	private String category;
 	private String type;
+	private List<Documentation> documentationList;
 
 	public App()
 	{
 	}
 
-	public App(String name, String url, String logo, String description, String category)
+	public App(String name, String url, String logo, String description, String category, List<Documentation> documentationList)
 	{
 		this.name = name;
 		this.url = url;
 		this.logo = logo;
 		this.description = description;
 		this.category = category;
+		this.documentationList = documentationList;
 	}
 
 	@Override
@@ -81,4 +84,12 @@ public class App
 	@XmlElement
 	public void setType(String type)
 		{ this.type = type; }
+
+	public List<Documentation> getDocumentationList()
+		{ return documentationList; }
+
+	@XmlElementWrapper(name = "documentationList")
+	@XmlElement(name = "documentation")
+	public void setDocumentationList(List<Documentation> documentationList)
+		{ this.documentationList = documentationList; }
 }

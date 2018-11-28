@@ -8,6 +8,20 @@
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
 		<type>Web Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>GDM Manual</displayName>
+				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
+			</documentation>
+			<documentation>
+				<displayName>GDM Technical Docs</displayName>
+				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
+			</documentation>
+			<documentation>
+				<displayName>GDM API</displayName>
+				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
+			</documentation>
+		</documentationList>
 	</launcher>
 	<launcher>
 		<name>Parameci GDM Extractor</name>
@@ -17,6 +31,7 @@
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
 		<type>Web Apps</type>
+		<documentationList></documentationList>
 	</launcher>
 	<launcher>
 		<name>TimeScope</name>
@@ -26,6 +41,7 @@
 		<color>color-green</color>
 		<category>Genotype Maangement</category>
 		<type>Web Apps</type>
+		<documentationList></documentationList>
 	</launcher>
 	<launcher>
 		<name>EiB Galaxy Demo</name>
@@ -35,6 +51,12 @@
 		<color>color-blue</color>
 		<category>Analysis</category>
 		<type>Web Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>GDM Data QC</displayName>
+				<url>http://cbsugobii05.biohpc.cornell.edu:6084/pages/viewpage.action?pageId=31195161</url>
+			</documentation>
+		</documentationList>
 	</launcher>
 	
 	<launcher>
@@ -45,6 +67,12 @@
 		<color>color-dark</color>
 		<category>Desktop Apps</category>
 		<type>Desktop Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>Flapjack Documentation</displayName>
+				<url>http://flapjack.hutton.ac.uk/en/latest/</url>
+			</documentation>
+		</documentationList>
 	</launcher>	
 	<launcher>
 		<name>TASSEL</name>
@@ -54,6 +82,12 @@
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
 		<type>Desktop Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>TASSEL 5</displayName>
+				<url>https://bitbucket.org/tasseladmin/tassel-5-source/wiki/UserManual</url>
+			</documentation>
+		</documentationList>
 	</launcher>
 	<launcher>
 		<name>KDXplore</name>
@@ -63,6 +97,12 @@
 		<color>color-white</color>
 		<category>Analysis</category>
 		<type>Desktop Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>KDXplore</displayName>
+				<url>http://www.kddart.org/kdxplore.html</url>
+			</documentation>
+		</documentationList>
 	</launcher>
 
 	<launcher>
@@ -73,6 +113,7 @@
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
 		<type>Links</type>
+		<documentationList></documentationList>
 	</launcher>
 	<launcher>
 		<name>EiB Platform</name>
@@ -82,5 +123,6 @@
 		<color>color-blue</color>
 		<category>Desktop Apps</category>
 		<type>Links</type>
+		<documentationList></documentationList>
 	</launcher>
 </gobii-launchers>

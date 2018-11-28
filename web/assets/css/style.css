@@ -159,7 +159,17 @@ supported by the browser.
 }
 
 #sidebar {
-    background: #999999;
+    /*background: #999999;*/
+    background: #242D27;
+    color: #EDEDE6;
+}
+
+#sidebar a {
+    color: #EDEDE6;
+}
+
+#sidebar a:hover {
+    color: #7D9992;
 }
 
 #heading {

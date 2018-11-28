@@ -3,6 +3,12 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html">
 	<ui:define name="sidebar">
+		<nav class="nav flex-column mt-3">
+			<h3>Documentation</h3>
+			<ui:repeat value="#{webAppsManagedBean.documentation}" var="documentation">
+				<a href="#{documentation.url}">#{documentation.displayName}</a>
+			</ui:repeat>
+		</nav>
 	</ui:define>
 
 	<ui:define name="main-content">
