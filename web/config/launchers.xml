@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <gobii-launchers>
 	<launcher>
-		<name>Zoan GDM Extractor</name>
-		<url>http://cbsugobii01.tc.cornell.edu:8081/gobii-zoan/</url>
+		<name>Dev GDM Extractor</name>
+		<url>http://cbsugobii10.tc.cornell.edu:8081/gobii-dev/</url>
 		<logo>gdm-11-b.png</logo>
-		<description>Zoan GDM Extractor</description>
+		<description>GDM Extractor for crop dev</description>
 		<color>color-green</color>
-		<category>Genotype Maangement</category>
+		<category>Genotype Management</category>
 		<type>Web Apps</type>
 		<documentationList>
 			<documentation>
@@ -24,24 +24,34 @@
 		</documentationList>
 	</launcher>
 	<launcher>
-		<name>Parameci GDM Extractor</name>
-		<url>http://cbsugobii01.tc.cornell.edu:8081/gobii-paramecia/</url>
-		<logo>gdm-11-b.png</logo>
-		<description>Parameci GDM Extractor</description>
-		<color>color-green</color>
-		<category>Genotype Maangement</category>
-		<type>Web Apps</type>
-		<documentationList></documentationList>
-	</launcher>
-	<launcher>
 		<name>TimeScope</name>
-		<url>http://cbsugobii10.tc.cornell.edu:8081/datatimescope/</url>
+		<url>http://cbsugobii10.tc.cornell.edu:8081/timescope/</url>
 		<logo>DataTimescope.png</logo>
 		<description>TimeScope</description>
 		<color>color-green</color>
-		<category>Genotype Maangement</category>
+		<category>Genotype Management</category>
 		<type>Web Apps</type>
-		<documentationList></documentationList>
+		<documentationList>
+			<documentation>
+				<displayName>Timescope User Manual</displayName>
+				<url>http://cbsugobii05.tc.cornell.edu:6084/display/UMS/Timescope+User+Manual</url>
+			</documentation>
+		</documentationList>
+	</launcher>
+	<launcher>
+		<name>KDCompute</name>
+		<url>http://cbsugobii10.tc.cornell.edu:8083/kdcompute/</url>
+		<logo>KDCompute_with_text.png</logo>
+		<description>KDCompute is a web application and platform that provides capability to conduct efficient and extensible data analysis within a secure, customisable and cooperative plugin framework.</description>
+		<color>color-green</color>
+		<category>Analysis</category>
+		<type>Web Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>KDCompute Home Page</displayName>
+				<url>http://www.kddart.org/kdcompute.html</url>
+			</documentation>
+		</documentationList>
 	</launcher>
 	<launcher>
 		<name>EiB Galaxy Demo</name>
