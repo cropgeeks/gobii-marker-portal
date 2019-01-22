@@ -66,6 +66,14 @@
 				<displayName>GDM Data QC</displayName>
 				<url>http://cbsugobii05.biohpc.cornell.edu:6084/pages/viewpage.action?pageId=31195161</url>
 			</documentation>
+			<documentation>
+				<displayName>GS Pipeline</displayName>
+				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/Genomic+Selection+Galaxy+Analysis+Pipeline</url>
+			</documentation>
+			<documentation>
+				<displayName>Galaxy Documentation</displayName>
+				<url>https://galaxyproject.org/docs/</url>
+			</documentation>
 		</documentationList>
 	</launcher>
 	
