@@ -10,21 +10,13 @@
 		<type>Web Apps</type>
 		<documentationList>
 			<documentation>
-				<displayName>GDM Manual</displayName>
-				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
-			</documentation>
-			<documentation>
-				<displayName>GDM Technical Docs</displayName>
-				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
-			</documentation>
-			<documentation>
-				<displayName>GDM API</displayName>
-				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/GOBii+Documentation</url>
+				<displayName>GDM</displayName>
+				<url>https://gobiiproject.atlassian.net/wiki/spaces/GD/overview</url>
 			</documentation>
 		</documentationList>
 	</launcher>
 	<launcher>
-		<name>TimeScope</name>
+		<name>Database Manager</name>
 		<url>http://cbsugobii10.tc.cornell.edu:8081/timescope/</url>
 		<logo>DataTimescope.png</logo>
 		<description>TimeScope</description>
@@ -33,8 +25,23 @@
 		<type>Web Apps</type>
 		<documentationList>
 			<documentation>
-				<displayName>Timescope User Manual</displayName>
-				<url>http://cbsugobii05.tc.cornell.edu:6084/display/UMS/Timescope+User+Manual</url>
+				<displayName>Timescope</displayName>
+				<url>https://gobiiproject.atlassian.net/wiki/spaces/TD/pages/38895617/User+Manual</url>
+			</documentation>
+		</documentationList>
+	</launcher>
+	<launcher>
+		<name>File Browser</name>
+		<url>http://cbsugobii01.biohpc.cornell.edu:8084/</url>
+		<logo>owncloud.png</logo>
+		<description>ownCloud web-based file browser</description>
+		<color>color-green</color>
+		<category>Genotype Management</category>
+		<type>Web Apps</type>
+		<documentationList>
+			<documentation>
+				<displayName>File Browser</displayName>
+				<url>https://gobiiproject.atlassian.net/wiki/spaces/GD/pages/41713710/Web+file+browser</url>
 			</documentation>
 		</documentationList>
 	</launcher>
@@ -48,27 +55,23 @@
 		<type>Web Apps</type>
 		<documentationList>
 			<documentation>
-				<displayName>KDCompute Home Page</displayName>
-				<url>http://www.kddart.org/kdcompute.html</url>
+				<displayName>GDM Data QC</displayName>
+				<url>https://gobiiproject.atlassian.net/wiki/spaces/GD/pages/41222145/Data+QC</url>
 			</documentation>
 		</documentationList>
 	</launcher>
 	<launcher>
-		<name>EiB Galaxy Demo</name>
+		<name>EiB GS pipeline Demo</name>
 		<url>http://galaxy-demo.excellenceinbreeding.org/</url>
 		<logo>galaxy.png</logo>
-		<description>EiB Galaxy Demo (Web-based bioinformatics platform)</description>
+		<description>EiB Genomic Selection Pipeline Demo (Galaxy Web-based bioinformatics platform)</description>
 		<color>color-blue</color>
 		<category>Analysis</category>
 		<type>Web Apps</type>
 		<documentationList>
 			<documentation>
-				<displayName>GDM Data QC</displayName>
-				<url>http://cbsugobii05.biohpc.cornell.edu:6084/pages/viewpage.action?pageId=31195161</url>
-			</documentation>
-			<documentation>
 				<displayName>GS Pipeline</displayName>
-				<url>http://cbsugobii05.biohpc.cornell.edu:6084/display/GDocs/Genomic+Selection+Galaxy+Analysis+Pipeline</url>
+				<url>http://galaxy-demo.excellenceinbreeding.org</url>
 			</documentation>
 			<documentation>
 				<displayName>Galaxy Documentation</displayName>
@@ -78,8 +81,18 @@
 	</launcher>
 	
 	<launcher>
+		<name>GDM Data Loader</name>
+		<url>http://gobiin1.bti.cornell.edu:6083/projects/LUG/repos/loaderui/raw/distribution/windows/distribution.zip?at=refs%2Fheads%2Frelease%2F1.5</url>
+		<logo>GDM-loader-logo.png</logo>
+		<description>GDM Data Loader is a data loading and curation tool</description>
+		<color>color-dark</color>
+		<category>Desktop Apps</category>
+		<type>Desktop Apps</type>
+		<documentationList></documentationList>
+	</launcher>	
+	<launcher>
 		<name>Flapjack</name>
-		<url>https://ics.hutton.ac.uk/flapjack</url>
+		<url>https://ics.hutton.ac.uk/flapjack/download-flapjack/</url>
 		<logo>flapjack128.png</logo>
 		<description>Flapjack provides advanced graphical genotype visualization and analysis for allele-based data sets</description>
 		<color>color-dark</color>
@@ -87,7 +100,7 @@
 		<type>Desktop Apps</type>
 		<documentationList>
 			<documentation>
-				<displayName>Flapjack Documentation</displayName>
+				<displayName>Flapjack</displayName>
 				<url>http://flapjack.hutton.ac.uk/en/latest/</url>
 			</documentation>
 		</documentationList>
@@ -104,21 +117,6 @@
 			<documentation>
 				<displayName>TASSEL 5</displayName>
 				<url>https://bitbucket.org/tasseladmin/tassel-5-source/wiki/UserManual</url>
-			</documentation>
-		</documentationList>
-	</launcher>
-	<launcher>
-		<name>KDXplore</name>
-		<url>http://www.kddart.org/kdxplore.html</url>
-		<logo>KDXplore_with_text.png</logo>
-		<description>Extensible data analysis and customisable framework</description>
-		<color>color-white</color>
-		<category>Analysis</category>
-		<type>Desktop Apps</type>
-		<documentationList>
-			<documentation>
-				<displayName>KDXplore</displayName>
-				<url>http://www.kddart.org/kdxplore.html</url>
 			</documentation>
 		</documentationList>
 	</launcher>
