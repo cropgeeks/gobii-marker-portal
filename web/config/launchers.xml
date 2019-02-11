@@ -16,7 +16,7 @@
 		</documentationList>
 	</launcher>
 	<launcher>
-		<name>Database Manager</name>
+		<name>Timescope</name>
 		<url>http://cbsugobii10.tc.cornell.edu:8081/timescope/</url>
 		<logo>DataTimescope.png</logo>
 		<description>TimeScope</description>
